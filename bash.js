@@ -6,13 +6,11 @@ process.stdin.on('data', (data) => {
   // process.stdout.write('You typed: ' + cmd)
 
   if (cmd === 'pwd') {
-    process.stdout.write(`${process.cwd()}`)
+    let printPWD = require('./pwd');
+    printPWD();
     // console.log(`${process.cwd()}`)
-
   }
 
   process.stdout.write('\nprompt >')
 
 });
-
-
